@@ -1,0 +1,49 @@
+.App {
+  margin: auto;
+  max-width: 350px;
+  border: 2px solid rgb(82, 6, 182);
+  text-align: center;
+}
+
+h2 {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 7px;
+  color: rgb(98, 203, 241);
+  text-align: center;
+}
+
+.scores-container {
+  margin: auto;
+  border: 8px solid rgb(129, 231, 101);
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+.person-score-container {
+  margin: 5px 5px 1px 5px;
+  padding: 2px;
+}
+
+h3 {
+  color: deepskyblue;
+}
+
+.personal-score {
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.score {
+  color: darkred;
+}
