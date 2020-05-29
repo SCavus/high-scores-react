@@ -1,11 +1,17 @@
 import React from "react";
 //import AllCountryScores from './AllCountryScores'
 
-const HighScoreTable = (props) => (
+const sortScores = (arr, sortValue) => {
+  return sortValue ? arr.sort((a, b) => b.s - a.s) : arr.sort((a, b) => a.s - b.s)
+}
+
+const HighScoreTable = (props) => {  
+  console.log(props)
+  return (
   <div className="scores-container">
     <h3>HIGH SCORES: {props.data.name}</h3>
     <div className="scores">
-      {props.data.scores.sort((a, b) => b.s - a.s).map((person, index) => {
+      {sortScores(props.data.scores, props.sort).map((person, index) => {
         return (
           <div key={index} className="person-score-container">
             <div className='personal-score'>
@@ -18,11 +24,7 @@ const HighScoreTable = (props) => (
       })}
     </div>
   </div>
-);
+  )
+}
 
 export default HighScoreTable;
-
-// {
-//     name: "England",
-//     scores: [ {n: "Jonny", s: 202020}, {n: "Chris", s: 202021}]
-//   },

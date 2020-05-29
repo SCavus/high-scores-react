@@ -13,6 +13,10 @@ h2 {
   text-align: center;
 }
 
+.sort-button {
+  margin: 10px;
+}
+
 .scores-container {
   margin: auto;
   border: 8px solid rgb(129, 231, 101);
